@@ -1,0 +1,13 @@
+{
+  "status": "stopped",
+  "procs": [
+    {
+      "script": "dev",
+      "port": 5173,
+      "pid": 114780,
+      "alive": false
+    }
+  ],
+  "startedAt": "2026-10-27T04:05:33.026Z",
+  "finishedAt": "2026-10-27T04:06:15.352Z"
+}
