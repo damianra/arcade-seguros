@@ -1,8 +1,14 @@
-# una-landing-page-de-seguros-con-un-estilo-retro-ar
+# arcade-seguros
 
-una landing page de seguros con un estilo retro arcade
+Una landing page de seguros con un estilo retro arcade.
 
-> App generada automáticamente por [MetaBuilder Orchestrator](https://github.com/damianra/metabuilder-orchestrator)
+> App generada automáticamente por [MetaBuilder Orchestrator](https://github.com/damianra/metabuilder-orchestrator) usando [OpenCode](https://opencode.ai) como motor de agente (via ACP).
+
+![Captura de la landing](screenshot.png)
+
+## Demo
+
+Publicada en GitHub Pages: https://damianra.github.io/arcade-seguros/
 
 ## Stack
 
@@ -29,4 +35,4 @@ npm run test:e2e   # E2E Playwright (Chromium)
 
 ## Deploy
 
-Si el proyecto se generó con `--github`, el build de `dist/` queda publicado en GitHub Pages (`https://<usuario>.github.io/una-landing-page-de-seguros-con-un-estilo-retro-ar/`). Pages sirve solo el frontend; en apps fullstack el backend corre aparte (`npm run api`).
+El build de `dist/` queda publicado en GitHub Pages (`https://damianra.github.io/arcade-seguros/`) desde la rama `gh-pages`. Pages sirve solo el frontend; en apps fullstack el backend corre aparte (`npm run api`).
