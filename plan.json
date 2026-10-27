@@ -1,0 +1,46 @@
+{
+  "projectName": "una-landing-page-de-seguros-con-un-estilo-retro-ar",
+  "scope": "frontend",
+  "appType": "landing",
+  "validated": true,
+  "steps": [
+    {
+      "id": 1,
+      "type": "infra",
+      "description": "El proyecto ya contiene el skeleton base (Vite + React + Tailwind + Vitest + Playwright) instalado por el orquestador. Verificar que `npm run build` compila. NO reestructurar el proyecto ni tocar la config base; si falta node_modules ejecutar `npm install` primero.",
+      "verify": "npm run build",
+      "status": "done",
+      "attempts": 0
+    },
+    {
+      "id": 2,
+      "type": "frontend",
+      "description": "Implementar la landing en React + Tailwind sobre el skeleton existente. Idea del usuario: \"una landing page de seguros con un estilo retro arcade\". Secciones mínimas en una sola página: Hero (titular + CTA), Features/Servicios, Menú o Productos si aplica, Footer. Todo contenido que el usuario no haya provisto explícitamente → texto lorem ipsum breve y placeholders visuales (bloques de color o placehold.co). Cumplir TODAS las reglas de UI de AGENTS.md: botón de enviar deshabilitado por defecto y habilitado solo con campos válidos, no renderizar links/iconos con URL vacía, fallback informativo si no hay datos, componentes sin props inventadas, componentes no soportados con fallback silencioso. Aplicar la guía de diseño de AGENTS.md: íconos reales de lucide-react (nunca placeholders de color), paleta neutra + 1 acento, navbar con anclas, hero con gradiente, cards con ring/shadow/hover. Sin número de WhatsApp provisto: NO incluir botón flotante de WhatsApp ni sección/formulario de contacto.",
+      "verify": "npm run build",
+      "status": "done",
+      "attempts": 0
+    },
+    {
+      "id": 3,
+      "type": "test",
+      "description": "Escribir tests con Vitest + Testing Library (jsdom ya configurado) en src/__tests__/: las secciones principales renderizan, la lista del menú muestra fallback cuando los datos están vacíos.",
+      "verify": "npx vitest run",
+      "status": "done",
+      "attempts": 0
+    },
+    {
+      "id": 4,
+      "type": "e2e",
+      "description": "Escribir specs Playwright en e2e/ (chromium; playwright.config.js ya tiene webServer sobre el dev server): la página carga sin errores de consola, hero/menú son visibles, y no existe ningún <a> con href vacío ni icono sin destino. Instalar el browser con `npx playwright install chromium` si hace falta.",
+      "verify": "npm run test:e2e",
+      "status": "done",
+      "attempts": 0
+    }
+  ],
+  "idea": "una landing page de seguros con un estilo retro arcade",
+  "stacks": {
+    "frontend": "vite-react",
+    "backend": null
+  },
+  "agent": "opencode"
+}

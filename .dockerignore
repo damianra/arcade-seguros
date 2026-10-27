@@ -1,0 +1,17 @@
+node_modules
+dist
+out
+.next
+.env
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+server/uploads/*
+!server/uploads/.gitkeep
+.git
+e2e/
+plan.json
+status.json
+report.md
+Dockerfile
+.dockerignore
